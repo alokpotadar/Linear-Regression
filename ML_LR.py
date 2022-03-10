@@ -3,7 +3,8 @@
 ###Predict a model for the data, supervised ML ####  """
 
 ## Import packages
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy
 import pandas as pd
 import matplotlib.pyplot as plt
